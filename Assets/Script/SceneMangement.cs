@@ -18,6 +18,6 @@ public class SceneMangement : MonoBehaviour
     }
     public void SceneChange_Main()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Director_Scene");
     }
 }

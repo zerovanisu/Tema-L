@@ -36,24 +36,14 @@ public class NotesTimingMaker : MonoBehaviour
 
     void DetectKeys()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             WriteNotesTiming(0);
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            WriteNotesTiming(1);
-        }
-
         if (Input.GetKeyDown(KeyCode.J))
         {
-            WriteNotesTiming(2);
-        }
-
-        if(Input.GetKeyDown(KeyCode.K))
-        {
-            WriteNotesTiming(3);
+            WriteNotesTiming(1);
         }
     }
 
