@@ -18,7 +18,6 @@ public class GameController : MonoBehaviour
     public float timeOffset = -1;
 
     private bool _isPlaying = false;
-    public GameObject startButton;
 
 
     void Start()
@@ -27,6 +26,8 @@ public class GameController : MonoBehaviour
         _timing = new float[1024];
         _lineNum = new int[1024];
         LoadCSV();
+
+        StartGame();
     }
 
     void Update()
@@ -40,7 +41,6 @@ public class GameController : MonoBehaviour
 
     public void StartGame()
     {
-        startButton.SetActive(false);
         _startTime = Time.time;
         _audioSource.Play();
         _isPlaying = true;
@@ -67,19 +67,7 @@ public class GameController : MonoBehaviour
 
             case 1:
                 Instantiate(notes[num],
-                new Vector3(10f, 1f, 0),
-                Quaternion.identity);
-                break;
-
-            case 2:
-                Instantiate(notes[num],
                 new Vector3(10f, -2.25f, 0),
-                Quaternion.identity);
-                break;
-
-            case 3:
-                Instantiate(notes[num],
-                new Vector3(10f, 1f, 0),
                 Quaternion.identity);
                 break;
         }
