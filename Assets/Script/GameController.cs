@@ -15,12 +15,12 @@ public class GameController : MonoBehaviour
     private AudioSource _audioSource;
     private float _startTime = 0;
 
-    public float timeOffset = -1;
+    public float timeOffset;
 
     private bool _isPlaying = false;
 
 
-    void Start()
+    void Awake()
     {
         _audioSource = GameObject.Find("GameMusic").GetComponent<AudioSource>();
         _timing = new float[1024];

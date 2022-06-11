@@ -827,7 +827,7 @@ MonoBehaviour:
   - {fileID: 2042026017340111330, guid: 97573ae3532b5204e9b436d64ba75b58, type: 3}
   - {fileID: 3646175093018104006, guid: ab3d34d65d2c4a74a90a41b70c1e5c1d, type: 3}
   filePass: CSV/TestTiming
-  timeOffset: -2.425
+  timeOffset: -2.4
 --- !u!4 &651147308
 Transform:
   m_ObjectHideFlags: 0
